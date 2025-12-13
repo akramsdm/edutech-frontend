@@ -19684,6 +19684,13 @@ only screen and (max-width: 1919px) {
   left: 0;
   z-index: 9999;
       width: 100%;
+  background: rgba(17, 17, 17, 0.6); /* #111111 with 60% opacity */
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
 
       
 }
@@ -20146,6 +20153,16 @@ only screen and (max-width: 1919px) {
     color: var(--primary);
 }
 
+.header__navicon {
+  display: none;
+}
+
+/* Show on small screens */
+@media (max-width: 767px) {
+  .header__navicon {
+    display: block;
+  }
+}
 
 /* header area 8 style  */
 
